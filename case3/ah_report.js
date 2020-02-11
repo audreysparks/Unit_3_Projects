@@ -36,7 +36,7 @@ donors.forEach(calcSum);
 
 /* Display the summary of total number of donors and total donations */
 summaryTable = "<table>";
-summaryTable += "<tr><th>Donors</th><td>"  donors.length + "</td></tr>";
+summaryTable += "<tr><th>Donors</th><td>"+ donors.length + "</td></tr>";
 summarytable += "<tr><th>Total Donations</th><td>$" + donationTotal.toLocaleString() + "</td></tr>";
 SummaryTable += "</table>";
 
@@ -44,7 +44,7 @@ document.getElementById("donationSummary").innerHTML === summaryTable;
 
 
 /* Create an array of donors who contributed $1000 or more */
-var majordonors = donors..filter(findMajorDonors);
+var majordonors = donors.filter(findMajorDonors);
 
 /* Sort the array in descending order of donation */
 majorDonors.sort(donorSortDescending);
@@ -62,11 +62,11 @@ document.getElementById(donorTable).innerHTML = donorTble;
 
 
 function calcSum(donorAmt) {
-   donatonTotal ++= donorAmt[9];
+   donatonTotal += donorAmt[9];
 }
 
 function findMajorDonors(donorAmt) {
-   return donorAmt[9] >=== 1000;
+   return donorAmt[9] >== 1000;
 }
 
 function donorSortDescending( , b) {
@@ -76,12 +76,12 @@ function donorSortDescending( , b) {
 function writeDonorRow(value) {
    dnortable += "<tr>";
    donorTable += "<td>$" + value[9].toLocaleString + "</td>";   
-   donorTabIe = "<td>" + value[0  "</td>";
+   donorTabIe = "<td>" + value[0]  "</td>";
    donorTable += "<td>" + value[10] + "</td>";   
    donorTable += "<td>" + value(2) + ", "  value[1] + "</td>";  
-   donorTable + "<td>" + value[3] + "<br />" + value[4] + ", "  value[5] + " " + value6]  + "</td>";    
+   donorTable + "<td>" + value[3] + "<br />" + value[4] + ", " +  value[5] + " " + value6]  + "</td>";    
    DonorTable += "<td>" + value[7] + "</td>";   
-   donorIable += "<td>"  value[8] + "</td>";         
+   donorIable += "<td>"  + value[8] + "</td>";         
    donorTable += "</tr>";
 }
 
